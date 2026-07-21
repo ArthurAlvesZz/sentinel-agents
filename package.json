@@ -1,0 +1,40 @@
+{
+  "name": "sentinel-agents",
+  "version": "0.1.0",
+  "description": "Proposal-first AI agents for regulated workflows — humans approve, agents propose.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "demo": "tsx examples/fiscal-demo/run.ts",
+    "evals": "tsx src/evals/run.ts"
+  },
+  "keywords": [
+    "ai-agents",
+    "llm",
+    "human-in-the-loop",
+    "ai-safety",
+    "governance",
+    "evals",
+    "regulated-industries",
+    "anthropic",
+    "bedrock"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArthurAlvesZz/sentinel-agents.git"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.1091.0",
+    "@types/node": "^22.20.1",
+    "tsx": "^4.23.1",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.7"
+  }
+}
