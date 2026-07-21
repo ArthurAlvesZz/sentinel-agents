@@ -2,6 +2,8 @@
 
 **Proposal-first AI agents for regulated workflows. Humans approve, agents propose.**
 
+![Sentinel demo: the agent validates, proposes the submission, waits for a named human to approve — and the audit trail remembers everything](docs/demo-sentinel.gif)
+
 Most agent frameworks optimize for autonomy. Sentinel optimizes for the opposite problem: workflows where a wrong action is a **rejected government filing, a compliance breach, or a legally binding mistake** — and "the model is usually right" is not an acceptable control.
 
 It grew out of building a real e-invoicing platform that submits documents directly to Brazil's tax authority (SEFAZ), where every AI-assisted action had to be auditable and every risky action had to pass through a human.
