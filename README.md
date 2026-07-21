@@ -34,6 +34,8 @@ npm run demo    # offline demo: agent drafts an invoice, YOU approve the submiss
 
 The demo runs fully offline with a scripted model. Add `--live` (with `ANTHROPIC_API_KEY` set) to drive it with a real model.
 
+![Fiscal demo: the agent validates automatically, but submission waits for a named human approver — and everything lands in the audit trail](docs/demo-approval.png)
+
 ## Usage
 
 ```ts
@@ -69,6 +71,8 @@ const scorecard = await runEvals(tools, [
 ```
 
 The harness simulates the *model* misbehaving — because in a regulated workflow the question is never "will the model behave?" but "what happens when it doesn't?".
+
+![Adversarial evals as a CI deploy gate — 8/8 invariants held, safe to deploy](docs/evals-gate.png)
 
 ## Status
 
